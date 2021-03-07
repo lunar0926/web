@@ -2,17 +2,51 @@
 <!--DOCTYPE html은 태그로 감싸지 않음-->
 <html>
 <head>
-<meta charset="utf-8">
-<!--title은 웹페이지 탭 이름을 표시. 제목이라는 정보제공-->
+    <title>내꺼</title>
+    <meta charset="utf-8">
+    <!--title은 웹페이지 탭 이름을 표시. 제목이라는 정보제공-->
+    <!--CSS-->
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            background-color: skyblue;
+        }
+        a {
+            color:white;
+            text-decoration:none;
+        }
+        #category {
+            background-color:skyblue;
+            width: 10%;
+            color: white;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            float: none;   
+        }
+
+    </style>
+<!--
+태그선택자 < 클래스선택자(.) < ID선택자(#) 순, 예외적일 수록 구체적
+같은 선택자라면 대상 태그에 가까울 수록 우선순위를 가짐
+-->
 </head>
-<title>내꺼</title>
 <body>
+    <!-- html에서 글자 색 바꾸기 
+        <h1><a href="index.html"><font color="red">내꺼</font></a></h1>
+    다른 html 태그들은 정보를 가지고 있는데 font태그는 디자인에 대한 
+    태그이기 때문에 정보전달을 목적으로 하는 html에 맞지 않음. 
+    -->
     <h1><a href="index.html">내꺼</a></h1>
-    <ul>
-        <li><a href="1.html">전자기기</a></li>
-        <li><a href="2.html">책</a></li>
-        <li><a href="3.html">옷</a></li>
-    </ul>
+    
+        
+    <a href="1.html" target="_blank" id="category">전자기기</a>
+    <a href="2.html" target="_blank" id="category">책</a>
+    <a href="3.html" target="_blank" id="category">옷</a>
+        
+    
 <!--ol, ul태그가 li의 부모태그-->
 <p style="margin-top: 50px;"> 이 웹사이트는 자신의 물건을 한눈에 보기 쉽게 정리하여 자신이 가지고 있는 물건은 어떤 것이 있는지, 자신에게 필요한 물건은 무엇인지, 불필요한 물건은 무엇인지를 알 수 있게 도와줍니다.</p>
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
