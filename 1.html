@@ -1,47 +1,97 @@
 <!DOCTYPE html>
-<!--DOCTYPE html은 태그로 감싸지 않음-->
 <html>
-<head>
-    <title>내꺼</title>
-<meta charset="utf-8">
-<!--title은 웹페이지 탭 이름을 표시. 제목이라는 정보제공-->
-<style>
-    h1 {
-        text-align: center;
-        font-size: 75px;
-    }
-    a {
-        color:black;
-        text-decoration:none;
-    }
-
-</style>
-</head>
-<title>내꺼</title>
-<body>
-    <h1><a href="index.html">내꺼</a></h1>
-    <h2>
+    <head>
+        <title>전자기기</title>
+        <meta charset="utf-8">
+        <style>
+            h1 {
+                text-align: center;
+                font-size: 50px;
+                color:black;
+                padding: 30px;
+                display: block;
+                
+            }
+            ul {
+                list-style: none;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                text-align: center;
+                border-top: 1px black solid;
+                border-bottom: 1px black solid;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+            a {
+                color: black; 
+                text-decoration: none;
+            }
+            #contents {
+                display: grid;
+                grid-template-columns: 1fr 1fr ;
+                text-align: left;
+                font-size: 20px; 
+                margin-top:50px;
+                border-top: 1px black solid;
+                padding-top: 15px;
+                border-bottom: 1px black solid;
+                padding-bottom: 15px;
+                margin-bottom: 50px;
+            }
+           
+            
+            
+        </style>
+    </head>
+    <body>
+        <h1>
+            내꺼
+        </h1>
         <ul>
+            <li><a href="home.html">Home</a></li>
             <li><a href="1.html">전자기기</a></li>
             <li><a href="2.html">책</a></li>
             <li><a href="3.html">옷</a></li>
         </ul>
-    </h2>
-<!--ol, ul태그가 li의 부모태그-->
-<h2><strong>전자기기</strong></h2>
-
-<p style="margin-top: 40px;">맥북에어<br>
-<img src="macbookair.jpg" width="50%">
-</p>
-<p>아이패드 에어 3세대<br><img src="ipadair.jpg" width="50%">
-</p>
-<p>아이폰8<br><img src="iphone8.jpg" width="50%"</p>
-<p>애플워치3<br><img src="applewatch3.jpg" width="50%"</p>
-<p>에어팟<br><img src="airpod.jpg" width="50%"</p>
-<p>데스크탑<br><img src="desktop.jpg" width="50%"</p>
-<!--paragraph와 break의 차이점 알기.
-p태그가 웹페이지에서 더 의미를 가짐. 한 단락
-이라는 정보를 주기 때문에.
-의미에 맞는 태그를 사용하는 것이 중요 -->
-</body>
+        <div id="contents">
+            <img src="macbookair.jpg" width="50%">
+            <p>
+                제품명: 맥북에어<br>
+                구입일: <br>
+                용도:
+            </p>
+        </div>   
+        <div id="contents">
+            <img src="ipadair.jpg" width="50%">
+            <p>
+                제품명: 아이패드 에어 3세대<br>
+                구입일: <br>
+                용도:
+            </p>
+        </div>
+        <div id="contents">
+            <img src="iphone8.jpg" width="50%">
+            <p>
+                제품명: 아이폰8<br>
+                구입일: <br>
+                용도:
+            </p>
+        </div>   
+        <div id="contents">
+            <img src="applewatch3.jpg" width="50%">
+            <p>
+                제품명: 애플워치3<br>
+                구입일: <br>
+                용도:
+            </p>
+        </div>
+        <div id="contents">
+            <img src="airpod.jpg" width="50%">
+            <p>
+                제품명: 에어팟 2세대 유선<br>
+                구입일: <br>
+                용도:
+            </p>
+        </div>
+    </body>
 </html>
