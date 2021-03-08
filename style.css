@@ -1,0 +1,63 @@
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color:black;
+    padding: 30px;
+    display: block;
+    
+}
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+a {
+    color: black; 
+    text-decoration: none;
+}
+p {
+    font-size: 20px;
+    text-align: center;
+}
+#index-contents {
+    display: grid;
+    grid-template-rows: 1fr;
+    <!--본문, 유튜브 영상, 댓글란 순으로-->
+    margin-top:50px;
+    border-top: 1px black solid;
+    padding-top: 15px;
+    border-bottom: 1px black solid;
+    margin-bottom: 50px;
+}
+#contents {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    <!--본문, 유튜브 영상, 댓글란 순으로-->
+    margin-top:50px;
+    border-top: 1px black solid;
+    padding-top: 15px;
+    border-bottom: 1px black solid;
+    margin-bottom: 50px;
+}
+    
+
+.embed-container { position: relative; padding-bottom: 56.25%; 
+height: 0; overflow: hidden; max-width: 100%; 
+} 
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position:absolute; top: 0; left: 0; width: 100%; height: 100%; 
+}
+@media(max-width:800px){
+    h1 {
+    text-align: center;
+    font-size: 30px;
+    color:black;
+    padding: 30px;
+    display: inline;
+    }
+}
