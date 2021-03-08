@@ -26,11 +26,14 @@
                 color: black; 
                 text-decoration: none;
             }
+            p {
+                font-size: 20px;
+                text-align: center;
+            }
             #contents {
                 display: grid;
                 grid-template-rows: 1fr ;
                 <!--본문, 유튜브 영상, 댓글란 순으로-->
-                text-align: left;
                 margin-top:50px;
                 border-top: 1px black solid;
                 padding-top: 15px;
@@ -42,7 +45,7 @@
             height: 0; overflow: hidden; max-width: 100%; 
             } 
             .embed-container iframe, .embed-container object, .embed-container embed { 
-                position: absolute; top: 0; left: 0; width: 30%; height: 30%; 
+                position:absolute; top: 0; left: 0; width: 100%; height: 100%; 
             }
         </style>
     </head>
@@ -51,7 +54,7 @@
             내꺼
         </h1>
         <ul>
-            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="1.html">전자기기</a></li>
             <li><a href="2.html">책</a></li>
             <li><a href="3.html">옷</a></li>
@@ -82,19 +85,6 @@
             <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
             </div>
             <!-- 시티 설치 코드 끝 -->
-            <!--Start of Tawk.to Script-->
-            <script type="text/javascript">
-                var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-                (function(){
-                var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-                s1.async=true;
-                s1.src='https://embed.tawk.to/60439b39385de407571d43d3/1f041cml2';
-                s1.charset='UTF-8';
-                s1.setAttribute('crossorigin','*');
-                s0.parentNode.insertBefore(s1,s0);
-                })();
-                </script>
-                <!--End of Tawk.to Script-->        
-                    </div>
+        </div>
     </body>
 </html>
