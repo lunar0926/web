@@ -6,6 +6,27 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div style="float:right; display: inline;">
+            <input type="button" value="night" onclick="
+                document.querySelector('body').style.backgroundColor= 'black';
+                document.querySelector('body').style.color = 'white';
+                document.querySelector('h1').style.color = 'white';
+                document.querySelector('ul').style.color = 'white';
+                document.querySelector('ul').style.borderTopColor = 'white';
+                document.querySelector('ul').style.borderBottomColor = 'white';
+            ">
+        </div>
+        <div style="float:right; display: inline;">
+            <input type="button" value="day" onclick="
+                document.querySelector('body').style.backgroundColor= 'white';
+                document.querySelector('body').style.color = 'black';
+                document.querySelector('h1').style.color = 'black';
+                document.querySelector('ul').style.color = 'black';
+                document.querySelector('ul').style.borderTopColor = 'black';
+            ">
+    
+
+        </div>
         <h1>
             내꺼
         </h1>
